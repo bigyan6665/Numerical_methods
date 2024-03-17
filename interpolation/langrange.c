@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <conio.h>
 
-void main()
+int main()
 {
     float x[100], y[100], xp, yp = 0, p;
     int i, j, n;
@@ -29,6 +29,6 @@ void main()
         }
         yp = yp + p * y[i];
     }
-    printf("Interpolated value at %.3f is %.3f.", xp, yp);
-    getch();
+    printf("langrange interpolated value at %.3f is %.3f.", xp, yp);
+    return 0;
 }
