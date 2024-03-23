@@ -2,19 +2,19 @@
 #include <conio.h>
 int main()
 {
-    int n;
+    int n,i;
     printf("Enter the number of data = ");
     scanf("%d", &n);
     float x[n], y[n], sumx = 0, sumxy = 0, sumx2 = 0, sumy = 0;
     printf("Enter data:\n");
-    for (int i = 0; i < n; i++)
+    for ( i = 0; i < n; i++)
     {
         printf("x[%d] = ", i + 1);
         scanf("%f", &x[i]);
         printf("y[%d] = ", i + 1);
         scanf("%f", &y[i]);
     }
-    for (int i = 0; i < n; i++)
+    for ( i = 0; i < n; i++)
     {
         sumx = sumx + x[i];
         sumxy = sumxy + x[i] * y[i];

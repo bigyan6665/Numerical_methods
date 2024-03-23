@@ -4,12 +4,12 @@
 #define e 2.718281828
 int main()
 {
-    int n;
+    int n,i;
     printf("Enter the number of data = ");
     scanf("%d", &n);
     float x[n], y[n], X[n], Y[n], sumX = 0, sumXY = 0, sumX2 = 0, sumY = 0;
     printf("Enter data:\n");
-    for (int i = 0; i < n; i++)
+    for ( i = 0; i < n; i++)
     {
         printf("x[%d] = ", i + 1);
         scanf("%f", &x[i]);
@@ -18,7 +18,7 @@ int main()
         Y[i] = log(y[i]); // in c , log = ln and log10 = log
         X[i] = log(x[i]);
     }
-    for (int i = 0; i < n; i++)
+    for ( i = 0; i < n; i++)
     {
         sumX = sumX + X[i];
         sumXY = sumXY + X[i] * Y[i];
